@@ -1,0 +1,254 @@
+/* ========================
+   Variables
+========================= */
+:root {
+  --primary: #3b82f6;
+  --success: #10b981;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+  --dark: #18181b;
+  --light: #f8fafc;
+}
+
+/* ========================
+   Custom Color Classes
+========================= */
+.custom-primary {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+.custom-success {
+  background-color: var(--success);
+  color: #fff;
+}
+
+.custom-warning {
+  background-color: var(--warning);
+  color: #fff;
+}
+.custom-danger {
+  background-color: var(--danger);
+  color: #fff;
+}
+
+/* ========================
+   Global
+========================= */
+body {
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+}
+
+.lead {
+  font-weight: 326;
+}
+
+/* ========================
+   Header
+========================= */
+
+#main-header .port-item {
+  width: 100%;
+}
+
+#main-header .port-item:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+#main-header .profile-img {
+  width: 100%;
+  height: 100%;
+}
+#main-header .social-media {
+  font-size: 1.3rem;
+}
+#main-header .social-media a:hover {
+  opacity: 0.8;
+}
+
+#main-header .typewriter {
+  background-color: black;
+  color: #fff;
+}
+#main-header .typewriter h5 {
+  font-weight: 400;
+}
+
+@media (min-width: 1199px) {
+  #main-header .port-item {
+    padding: 3em !important;
+  }
+}
+
+/* ========================
+   Resume
+========================= */
+
+#resumePage {
+  background: linear-gradient(135deg, #f8fafc 20%, #e0f7fa 100%);
+}
+
+#resumePage li {
+  margin-bottom: 10px;
+}
+
+#resumePage .card {
+  border-radius: 0.5rem;
+  border-color: var(--success);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#resumePage .card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 24px rgba(59, 130, 246, 0.15),
+    0 1.5px 6px rgba(16, 185, 129, 0.1);
+  border-color: var(--success);
+}
+
+#resumePage .badge {
+  font-weight: 500;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: #d1fae5; /* Mint Mist */
+  color: #065f46; /* Deep Forest Green */
+  border: 1px solid var(--success); /* Optional accent */
+}
+
+/* ========================
+   Skills Section
+========================= */
+
+#skills p {
+  font-size: 1.15rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--dark);
+}
+
+#skills .card-body ul li {
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+.tech-icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-right: 0.3rem;
+
+  filter: drop-shadow(0 2px 8px #10b98144);
+  transform: scale(1.12);
+  transition: transform 0.2s, filter 0.2s;
+}
+
+/* ========================
+   Education Section
+========================= */
+
+#education p {
+  font-size: 1.15rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--dark);
+}
+
+#education .card i {
+  color: var(--success);
+}
+
+/* ========================
+   Projects
+========================= */
+
+#projectsPage {
+  background: linear-gradient(135deg, #ffffff 20%, #fdfcfb 100%);
+}
+
+.project-card {
+  border: none;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(245, 158, 11, 0.1),
+    0 2px 8px rgba(60, 60, 60, 0.08);
+  transition: transform 0.4s cubic-bezier(0.2, 1, 0.3, 1),
+    box-shadow 0.4s cubic-bezier(0.2, 1, 0.3, 1);
+  background: #fff;
+  position: relative;
+  margin-bottom: 3.4rem;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 36px rgba(245, 158, 11, 0.16),
+    0 4px 16px rgba(60, 60, 60, 0.1);
+  z-index: 2;
+}
+
+.project-card .card-body {
+  padding: 2.2rem 2rem 2rem 2rem;
+}
+
+.project-card .card-title {
+  font-size: 2rem;
+  color: #18181b;
+}
+
+.project-card .text-muted {
+  font-size: 1.1rem;
+}
+
+.project-card .accent-bar {
+  position: absolute;
+  top: 15%;
+  left: 100%;
+  width: 4px;
+  height: 70%;
+  background: var(--warning);
+  border-radius: 8px;
+  z-index: 2;
+  box-shadow: 0 0 12px 0 #f59e0b44;
+}
+
+.project-card .badge {
+  font-weight: 500;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: #fef3c7; /* Pale Amber */
+  color: #92400e; /* Burnt Amber text */
+  border: 1px solid var(--warning); /* Optional accent border */
+}
+
+.project-card .btn {
+  font-weight: 600;
+  border-color: var(--warning);
+  color: var(--warning);
+  background: transparent;
+}
+
+.project-card .btn:hover,
+.project-card .btn:focus {
+  background: var(--warning);
+  color: #fff;
+  border-color: var(--warning);
+}
+
+@media (max-width: 768px) {
+  .project-card .accent-bar {
+    display: none;
+  }
+  .project-img {
+    border-radius: 1.25rem 1.25rem 0 0;
+  }
+  .project-card .card-body {
+    padding: 1.5rem 1rem 1rem 1rem;
+  }
+}
+
+/* ========================
+   Footer
+========================= */
+
+footer {
+  padding-top: 34px;
+}
