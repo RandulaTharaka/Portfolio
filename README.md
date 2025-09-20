@@ -10,8 +10,7 @@ A modern, responsive personal portfolio website to showcase my skills, experienc
 
 ## 📄 License
 
-All rights reserved.  
-This project is provided for demonstration purposes only. [License](LICENSE).
+All rights reserved. This project is provided for demonstration purposes only. [License](LICENSE)
 
 ## 🤝 Connect With Me
 
